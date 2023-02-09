@@ -6,7 +6,7 @@ bool solve(int arr[],int l,int r)
         return true;
     if(arr[l]!=arr[r])
         return false;
-    solve(arr, l + 1, r - 1);
+    return solve(arr, l + 1, r - 1);
 }
 
 

@@ -2,7 +2,7 @@
 using namespace std;
 void solve(int a[],vector<int> &v,int i,int n)
 {
-    if(i>=n)
+    if(i==n)
     {
         cout << "[";
         for(auto it :v)
@@ -23,5 +23,6 @@ int main()
     vector<int> v;
     int size = sizeof(a) / sizeof(a[0]);
     solve(a, v, 0, size);
+
     return 0;
 }

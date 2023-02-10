@@ -1,0 +1,67 @@
+Techniques to print only one subsequence is :-
+f()
+{
+    if base case condition satisfied{
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+    if(f()==true)
+    {
+        return true;
+    }
+    return false;
+}
+
+Example :-
+
+
+*****************************************************************************************
+-----------------------------------------------------------------------------------------
+*****************************************************************************************
+
+
+
+
+bool printSubsequence(int arr[],vector<int> v,int ind,int size,int sum,int target)
+{
+    if(i==n)
+    {
+        if(sum==target)
+        {
+            for(auto it : v)
+            {
+                cout<<it<<" ";
+            }
+            cout<<endl;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    v.push_back(arr[i]);
+    sum+=arr[i];
+    if(printSubsequence(arr,v,i+1,size,sum,target))
+    {
+        return true;
+    }
+    sum-=arr[i];
+    v.pop_back();
+    if(printSubsequence(arr,v,i+1,size,sum,target))
+    {
+        return true;
+    }
+    return false;
+    
+}
+
+
+
+
+*****************************************************************************************
+-----------------------------------------------------------------------------------------
+*****************************************************************************************

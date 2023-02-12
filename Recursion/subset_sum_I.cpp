@@ -21,13 +21,13 @@ void solve(int arr[],int i,int n,vector<int> &v,int sum)
 }
 int main()
 {
-    int arr[] = {3, 1, 2};
+    int arr[] = { 1, 2};
     int sum = 0;
     int size = sizeof(arr) / sizeof(arr[0]);
     vector<int> v;
     solve(arr, 0, size, v,sum);
     sort(v.begin(), v.end());
-    for(auto it :v)
+    for(auto it : v)
     {
         cout << it << " ";
     }

@@ -74,13 +74,13 @@ void preInPost(node * root)
 
 int main()
 {
-        node *root = new node(0);
-        root->left = new node(1);
-        root->right = new node(2);
-        root->left->left = new node(3);
-        root->left->right = new node(4);
-        root->right->left = new node(5);
-        root->right->left = new node(6);
-        preInPost(root);
-        return 0;
+    node *root = new node(0);
+    root->left = new node(1);
+    root->right = new node(2);
+    root->left->left = new node(3);
+    root->left->right = new node(4);
+    root->right->left = new node(5);
+    root->right->left = new node(6);
+    preInPost(root);
+    return 0;
 }

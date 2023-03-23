@@ -13,6 +13,7 @@ public:
         left = right = NULL;
     }
 };
+
 bool isLeaf(node *root)
 {
     return !root->left && !root->right;
@@ -28,7 +29,7 @@ void addLeft(node *root, vector<int> &res)
         if(curr->left) curr=curr->left;
         else curr=curr->right;
     }
-    for (int i = temp.size(); i >= 0;i--)
+    for (int i = temp.size()-1; i >= 0;i--)
     {
         res.push_back(temp[i]);
     }
@@ -66,7 +67,7 @@ void printBoundary(node *root)
     if (!isLeaf(root))
         res.push_back(root->data);
     addRight(root, res);
-    // addLeaf(root, res);
+    addLeaf(root, res);
     addLeft(root, res);
     for (auto it : res)
     {

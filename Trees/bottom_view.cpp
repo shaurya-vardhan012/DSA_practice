@@ -19,8 +19,7 @@ void bottom_view(node *root)
     vector<int> ans;
     if (root == NULL)
     {
-
-        return;
+       return;
     }
     map<int, int> mp;
     queue<pair<node *, int>> q;

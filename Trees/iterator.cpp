@@ -51,4 +51,4 @@ int main()
     root->right->right = new node(6);
     preorder(root);
     return 0;
-}
+}   

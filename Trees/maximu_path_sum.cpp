@@ -38,7 +38,7 @@ int main()
     root->right = new node(2);
     root->left->left = new node(3);
     root->left->right = new node(4);
-    root->right->left = new node(5);
+    root->right->left = new node(5);        
     root->right->left = new node(6);
     cout << "The maximum path sum is : " << maximum_path(root);
     return 0;
